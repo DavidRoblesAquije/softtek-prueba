@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.setpbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEFFC;
+    padding: 10px;
+}
+
+.setpbar__desktop {
+    @media (max-width: 475px) {
+        display: none;
+    }
+
+    .step {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        color: #7981B2;
+
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid #7981B2;
+            background-color: transparent;
+            color: #7981B2;
+            margin-right: 8px;
+        }
+
+        .step-label {
+            font-family: "Lato", sans-serif;
+            font-weight: 500;
+        }
+
+        &.active {
+            color: #141938;
+
+            .step-number {
+                background-color: #4F4FFF;
+                color: #fff;
+            }
+        }
+    }
+
+    .separator {
+        margin: 0 16px;
+        font-size: 1.2rem;
+        color: #7981B2;
+    }
+
+}
+
+//RESPONSIVE
+
+.stepbar__responsive {
+    display: none;
+
+    .step-info {
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        color: #141938;
+        letter-spacing: 0.8px;
+        margin: 0 20px;
+    }
+
+    .progress-bar {
+        flex: 1;
+        height: 6px;
+        background-color: #D7DBF5;
+        border-radius: 4px;
+        overflow: hidden;
+
+        .progress {
+            height: 100%;
+            background-color: #4F4FFF;
+            ;
+            border-radius: 4px;
+        }
+    }
+
+    @media (max-width: 475px) {
+        display: flex;
+    }
+}

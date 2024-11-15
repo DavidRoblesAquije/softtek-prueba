@@ -1,0 +1,187 @@
+.section__planes {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto auto 1fr auto;
+
+    @media (max-width:575px) {
+        display: block;
+    }
+
+    .planespage {
+        font-family: Lato;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 35px 0px;
+
+        .resumepage__button {
+            color: #4F4FFF;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .title__section {
+            max-width: 544px;
+            margin: auto;
+            text-align: center;
+            font-family: Lato;
+            color: #141938;
+
+            @media (max-width:475px) {
+                max-width: initial;
+                text-align: initial;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 48px;
+
+                @media (max-width:475px) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+
+        .card {
+            &.card__option {
+                border-radius: 24px !important;
+                font-family: Lato;
+                box-shadow: 0px 1px 32px 0px #AEACF359;
+                border: 3px solid transparent;
+                cursor: pointer;
+
+                .card__check {
+                    background: #fff;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    float: right;
+                    border: 1px solid #141938;
+                }
+
+                .card__icon__title {
+                    @media (max-width:575px) {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 15px;
+                    }
+                }
+
+                &.selected {
+                    border: 3px solid #03050F;
+
+                    .card__check {
+                        border: 1px solid #389E0D;
+                        background: #389E0D;
+                    }
+                }
+
+                h3 {
+                    color: #141938;
+                    margin-top: 10px;
+                    font-size: 20px;
+                    font-weight: 900;
+                    line-height: 28px;
+                    letter-spacing: -0.20000000298023224px;
+                }
+
+                p {
+                    color: #141938;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.20000000298023224px;
+                }
+            }
+        }
+
+        .swiper.card__planswipper {
+            padding-top: 30px;
+
+            .card {
+                &.card__planslist {
+                    box-shadow: 0px 1px 32px 0px #AEACF359;
+                    border: 3px solid transparent;
+                    border-radius: 24px;
+
+                    .card__plan {
+                        .card__header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: start;
+                            min-height: 120px;
+
+                            .card__type {
+                                h3 {
+                                    font-size: 24px;
+                                    font-weight: 900;
+                                    line-height: 32px;
+                                    color: #141938;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    margin: 0;
+                                    font-weight: 900;
+                                    line-height: 16px;
+                                    color: #7981B2;
+                                }
+
+                                strong {
+                                    color: #141938;
+                                    font-size: 20px;
+                                    font-weight: 900;
+                                    line-height: 28px;
+                                }
+                            }
+                        }
+
+                        ul {
+                            min-height: 300px;
+
+                            li {
+                                font-weight: 400;
+                                line-height: 28px;
+                                margin-bottom: 25px;
+                            }
+                        }
+
+                        .card__plan__button {
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 224px;
+                            padding: 14px 32px;
+                            border-radius: 32px;
+                            background: #FF1C44;
+                            font-family: Lato;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            letter-spacing: 0.4px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

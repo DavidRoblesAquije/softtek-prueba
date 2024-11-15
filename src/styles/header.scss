@@ -1,0 +1,51 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    height: 64px;
+
+    &__logo img {
+        width: 73.19px;
+        height: 36px;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        column-gap: 10px;
+
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+            text-align: right;
+            margin: 0;
+
+            @media (max-width: 475px) {
+                display: none;
+            }
+        }
+
+        div {
+            img {
+                position: relative;
+                top: -2px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 5px;
+            }
+        }
+
+    }
+}

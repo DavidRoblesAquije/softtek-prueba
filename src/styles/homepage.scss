@@ -1,0 +1,184 @@
+.body__section {
+    padding: 30px 0;
+
+    .body__image {
+        position: relative;
+        max-width: 480px;
+        height: 560px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        @media (max-width: 767px) {
+            width: 136px;
+            height: 160px;
+            float: right;
+        }
+
+        img {
+            height: 100%;
+            position: relative;
+            left: -160px;
+            transform: scaleX(-1);
+
+            @media (max-width: 767px) {
+                left: -40px;
+            }
+        }
+    }
+
+    .body__form {
+        position: relative;
+        max-width: 352px;
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+            margin-top: 50px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 90%;
+                height: 1px;
+                background: #CCD1EE;
+                left: 50%;
+                top: -25px;
+                transform: translateX(-50%);
+            }
+        }
+
+
+        span {
+            background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            text-align: left;
+            margin-bottom: 4px;
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: -190px;
+                font-size: 10px;
+                padding: 2px 8px;
+            }
+
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: left;
+            margin-top: 16px;
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: -170px;
+                font-size: 28px;
+                line-height: 36px;
+                width: 188px;
+            }
+
+            @media (max-width: 350px) {
+                width: 150px;
+                font-size: 25px;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 24px;
+            color: #03050F;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            text-align: left;
+
+        }
+
+        //FORMULARIO
+        .form {
+            .pl-0 {
+                padding-left: 0;
+            }
+
+            .pr-0 {
+                padding-right: 0;
+            }
+
+            .form-group {
+                margin-bottom: 16px;
+
+                input,
+                select {
+                    padding: 8px 16px;
+                    border: 1px solid #5E6488;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .form-check-input {
+                &:checked {
+                    background-color: #0A051E;
+                    border-color: #0A051E;
+                }
+            }
+
+            .form-check-label {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+                text-align: left;
+            }
+
+            .terms {
+                font-size: 0.9rem;
+                margin: 16px 0;
+
+                a {
+                    color: #000;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                font-weight: 700;
+                color: #fff;
+                background-color: #03050F;
+                border: none;
+                cursor: pointer;
+                width: 195px;
+                height: 64px;
+                padding: 20px 40px;
+                gap: 8px;
+                border-radius: 40px;
+
+                &:disabled {
+                    background-color: #ccc;
+                    cursor: not-allowed;
+                }
+
+                &:not(:disabled):hover {
+                    background-color: #333;
+                }
+
+                @media (max-width:767px){
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+}
