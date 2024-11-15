@@ -6,7 +6,7 @@ import { FormHome } from "../components/FormHome";
 import { Footer } from "../components/Footer";
 export const HomePage = () => {
   return (
-    <>
+    <section className="section__home">
       <Header />
       <div className="body__section">
         <div className="container">
@@ -33,6 +33,6 @@ export const HomePage = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </section>
   );
 };
